@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=320, initial-scale=1.0"/>
+    <title>My encyclopedia</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://use.fontawesome.com/17250ce87d.js"></script>
+  </head>
+  <body>
+    <header class="d-flex justify-content-between"> 
+        <h1>My encyclopedia</h1>
+        <div class="search-block">
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                    </svg>
+                </span>
+                <input 
+                    type="text" 
+                    id="searchInput"
+                    list="titles"
+                    class="form-control" 
+                    placeholder="Search" 
+                >
+                <datalist id="titles"></datalist>
+              </div>
+        </div>
+    </header>
+    <main class="d-flex">
+        <aside class="menu">
+            <button id="mainPage">Main Page</button>
+            <button id="randomArticle">Random article</button>
+            <button id="topicsPage">Topics</button>
+            <button id="contentsPage">Contents</button>
+        </aside>
+        <div id="app">
+        </div>
+    </main>
+    <div id="modalWindow">
+
+    </div>
+    <footer>
+        @UserWhoHade
+    </footer>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
