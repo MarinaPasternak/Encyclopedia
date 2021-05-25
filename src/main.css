@@ -1,3 +1,50 @@
+@media (min-width: 550px){
+    header {
+        display: flex;
+        justify-content: space-between;
+    } 
+
+    .article-content {
+        display: flex;
+    }
+
+    .article-content img {
+        margin-right: 31px;
+    }
+
+    #openMenu {
+        top: 8%;
+    }
+
+}
+
+@media (max-width: 550px){
+    header {
+        display: grid;
+        padding: 10px;
+    } 
+
+    header h1 {
+        text-align: center;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .article-content {
+        display: grid;
+    }
+
+    .article-content img {
+        margin: auto;
+    }
+
+    #openMenu {
+        top: 13%;
+    }
+}
+
 header,
 footer {
     background-color: #83A8E0;
@@ -17,9 +64,12 @@ header h1 {
 
 .menu {
     height: 100%;
-    display: grid;
     width: fit-content;
     padding: 10px;
+    position: absolute;
+    background-color: white;
+    display: none;
+    box-shadow: 32px 1px 21px -11px rgba(0, 0, 0, 0.41);
 }
 
 .menu button {
@@ -97,8 +147,7 @@ footer {
 
 .article-content img {
     height: 150px;
-    width: 130px;
-    margin-right: 31px;
+    width: 200px;
 }
 
 #modalWindow {
@@ -132,6 +181,19 @@ footer {
 .modal-window-content p{
     height: 160px;
     overflow: hidden;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#openMenu {
+    position: absolute;
+    left: 10px;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #69a4fd;
 }
 
 

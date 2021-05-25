@@ -90,7 +90,7 @@ import data from './data.js';
         
     }
 
-    document.getElementById('searchInput').onchange = function () {
+    document.getElementById('searchInput').onchange = function() {
         const searchValue = this.value;
         document.getElementById('titles').innerHTML = '';
         
@@ -106,7 +106,17 @@ import data from './data.js';
         createdataList(allMatches);
     };
 
-    document.getElementById('basic-addon1').onclick = function () {
+    document.getElementById('openMenu').onclick = function() {
+        document.querySelector('.menu').style.display = 'block';
+        this.style.display = 'none';
+    };
+
+    document.querySelector('.menu').onclick = function() {
+        document.getElementById('openMenu').style.display = 'block';
+        this.style.display = 'none';
+    };
+
+    document.getElementById('basic-addon1').onclick = function() {
         let searchValue = document.getElementById('searchInput').value;
         const articleId =  data.find((article) => article.title === searchValue);
         const article = new Article(articleId.id);
@@ -117,6 +127,10 @@ import data from './data.js';
         newMainPage.createPage();
         getAllTitles();
         createdataList(allTitles);
+
+        if (indow.innerWidth < 440) {
+
+        }
     }
     document.addEventListener('DOMContentLoaded',WorkOnLoad);
 })();

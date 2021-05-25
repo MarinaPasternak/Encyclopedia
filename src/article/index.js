@@ -21,7 +21,7 @@ export default class Article {
         title.innerHTML =  articleData.title;
         img.src = articleData.imgSRC;
         about.innerHTML = articleData.text;
-        divContent.className = 'article-content d-flex';
+        divContent.className = 'article-content';
 
         mainApp.appendChild(title);
         mainApp.appendChild(hr);
