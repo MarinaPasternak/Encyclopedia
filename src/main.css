@@ -1,3 +1,9 @@
+@media (min-width: 1024px) {
+    #openMenu {
+        top: 8%;
+    }
+}
+
 @media (min-width: 550px){
     header {
         display: flex;
@@ -12,10 +18,16 @@
         margin-right: 31px;
     }
 
-    #openMenu {
-        top: 8%;
+    #modalWindow {
+        left: 29%;
     }
+}
 
+@media (max-width: 580px){
+
+    #openMenu {
+        top: 12%;
+    }
 }
 
 @media (max-width: 550px){
@@ -41,7 +53,41 @@
     }
 
     #openMenu {
-        top: 13%;
+        top: 20%;
+    }
+
+    #modalWindow {
+        left: 3%;
+    }
+}
+
+@media (max-width: 415px){
+    #modalWindow {
+        left: 0%;
+    }
+
+    #openMenu {
+        top: 19%;
+    }
+}
+
+@media (max-width: 375px){
+    #openMenu {
+        top: 18%;
+    }
+
+    #modalWindow {
+        left: 0%;
+    }
+}
+
+@media (max-width: 320px){
+    #openMenu {
+        top: 33%;
+    }
+
+    #modalWindow {
+        left: 0%;
     }
 }
 
@@ -88,11 +134,8 @@ header h1 {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     padding: 10px;
+    height: 50px;
 }
 
 .accordion {
@@ -146,8 +189,8 @@ footer {
 }
 
 .article-content img {
-    height: 150px;
-    width: 200px;
+    height: 250px;
+    width: 300px;
 }
 
 #modalWindow {
@@ -157,7 +200,6 @@ footer {
     height: 300px;
     position: absolute;
     top: 10%;
-    left: 29%;
     z-index: 1;
     padding: 15px;
     box-shadow: -4px 2px 25px 22px rgba(0, 0, 0, 0.41);
@@ -194,6 +236,14 @@ h1, h2 {
     padding: 10px;
     border-radius: 15px;
     background-color: #69a4fd;
+}
+
+main {
+    min-height: calc(100vh - 110px);
+}
+
+footer {
+    height: 50px;
 }
 
 
